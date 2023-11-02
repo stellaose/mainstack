@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Degular Regular';
+  src: url('/assets/font/Degular-Regular.otf')
+}
+
+@font-face {
+  font-family: 'Degular Bold';
+  src: url('/assets/font/Degular-Bold.otf')
+}
+
+@font-face {
+  font-family: 'Degular Black';
+  src: url('/assets/font/Degular-Black.otf')
+}
+
+@font-face {
+  font-family: 'Degular Medium';
+  src: url('/assets/font/Degular-Medium.otf')
+}
+
+@font-face {
+  font-family: 'Degular Semibold';
+  src: url('/assets/font/Degular-Semibold.otf')
+}
+
+@font-face {
+  font-family: 'Degular Thin';
+  src: url('/assets/font/Degular-Thin.otf')
+}
+
+@import 'variables';
+
+body{
+  font-family: 'Degular Regular';
+  max-width: $global-capped-width;
+  margin: 0 auto;
+  background-color: white;
+  overflow: auto !important;
+  position: relative;
+}
+
+p, h3{
+  margin: 0;
+  padding: 0;
+};
+
+button{
+  cursor: pointer;
+}
+
+.animate__animated.animate__slideInRight, .animate__animated.animate__slideOutRight {
+  --animate-duration: 2s;
+}
+
+.react-datepicker-wrapper{
+  width: 80%;
+  background-color: transparent;
+  border-radius: 12px;
+  
+  
+  .react-datepicker__input-container{
+    align-self: stretch;
+    width: 100%;
+    input{
+      border: none;
+      padding: 10px 0 10px 8px;
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+      font-size: $text-size;
+      line-height: $line-height
+      
+    }
+  }
+  
+  
+}
+
+.react-datepicker{
+  box-shadow: $lil-box-shadow;
+  background: $white;
+  border: none !important;
+  font-family: 'Degular Regular' !important;
+  border-radius: 16.85px !important;
+  
+  .react-datepicker__navigation{
+    margin: 33.1px 33.1px 0;
+    width: 26.96px;
+    height: 26.96px;
+  }
+  
+  .react-datepicker__month-container{
+    width: 343.2px;
+    padding: 33.1px;
+    
+    
+    .react-datepicker__header{
+      background-color: transparent;
+      border-bottom: none;
+      font-size: 13.48px;
+      
+      
+      .react-datepicker__day-names{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    
+    .react-datepicker__month{
+      .react-datepicker__week{
+        display: flex;
+        justify-content: space-between;
+        font-size: $text-size;
+        
+        .react-datepicker__day--selected{
+          background-color: $black;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.react-datepicker__triangle{
+  display: none;
+}
+
+.MuiPopover-paper{
+  position: fixed !important;
+  transform: none !important;
+}
+
+.MuiFormControl-root{
+  width: unset !important;
+  margin: 0 !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  
+  
+  .MuiOutlineInput-root{
+    border-radius: 12px !important;
+  }
+  
+  .MuiSelect-select{
+    min-height: unset !important;
+    border-radius: 12px !important;
+    
+  }
+}
+
+.MuiPaper-root{
+  max-height: 314px !important;
+  min-height: 164px !important;
+  height: auto;
+  overflow-y: auto !important;
+  
+  &::-webkit-scrollbar{
+    display: none !important;
+  }
+ 
+  
+  .MuiSvgIcon-root{
+    fill: $black !important;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.MuiTypography-root{
+  font-family: 'Degular Semibold' !important;
+}
+
+.MuiButtonBase-root{
+  padding: 14px;
+}
+
+.Mui-selected{
+  background-color: transparent !important;
+}
+
+
