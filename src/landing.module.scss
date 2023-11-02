@@ -188,6 +188,14 @@
             font-size: $text-normal;
             letter-spacing: $letter-spacing;
             line-height: $text-height;
+            
+            span{
+              background-color: $black;
+              border-radius: 100px;
+              padding: 2px 6px;
+              font-size: 12px;
+              color: $white;
+            }
           }
 
           .expand_more {

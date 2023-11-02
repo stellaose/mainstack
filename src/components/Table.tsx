@@ -125,15 +125,14 @@ const Table = () => {
     setStartDate(start);
     setEndDate(new Date());
   };
-  
+
   const filterAllTime = () => {
     const start = new Date();
-    
+
     const allTimeStart = new Date(start.getFullYear() - 1);
     setStartDate(allTimeStart);
     setEndDate(new Date());
   };
-  
 
   // Calculate the difference in days
   const diffInTime =
@@ -176,10 +175,10 @@ const Table = () => {
               <div className={styles.btn_frame}>
                 <div className={styles.btn_wrapper}>
                   Filter{" "}
-                  {filteredTransactions.length !== transact.length &&
-                  filteredTransactions.length !== 0
-                    ? filteredTransactions.length
-                    : null}
+                    {filteredTransactions.length !== transact.length &&
+                    filteredTransactions.length !== 0
+                      ? <span>{filteredTransactions.length}</span>
+                      : null}
                 </div>
                 <img
                   className={styles.expand_more}
@@ -278,7 +277,7 @@ const Table = () => {
               <div className={styles.empty_frame}>
                 <div className={styles.frame}>
                   <div className={styles.group}>
-                    <img src="/assets/icons/icon.png" alt=""/>
+                    <img src="/assets/icons/icon.png" alt="" />
                   </div>
                   <div className={styles.text}>
                     <p className={styles.first_text}>
@@ -291,9 +290,7 @@ const Table = () => {
                   </div>
                 </div>
                 <div className={styles.medium_primary}>
-                  <button className={styles.label_icon}>
-                    Clear filter
-                  </button>
+                  <button className={styles.label_icon}>Clear filter</button>
                 </div>
               </div>
             </>
